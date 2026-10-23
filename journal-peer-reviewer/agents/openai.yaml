@@ -1,0 +1,4 @@
+interface:
+  display_name: "Journal Peer Reviewer"
+  short_description: "Review journal manuscripts and verify scientific revisions"
+  default_prompt: "Use $journal-peer-reviewer to assess the authorized journal manuscript and draft separate author and editor reports."
