@@ -20,6 +20,12 @@ Classify disagreement as factual, methodological, scope/venue-related, or unreso
 
 If an authorized panel was used, disclose actual provenance when known: model/provider, invocation context, visibility of peer reports, and tools. Distinct personas using the same model can share errors. Never label generated personas as actual human experts or treat majority agreement as empirical confirmation.
 
+## Integrity signals and conflicts
+
+A similarity score or AI-detector output is not proof of plagiarism, fabrication, or authorship. Describe directly inspected evidence and its context, including attribution and plausible legitimate overlap. No universal percentage establishes rejection. A tool not run must not be reported as a completed check. Do not export confidential content for such checks without specific permission; route substantiated concerns through the designated restricted editor/chair channel for human investigation rather than accuse authors.
+
+If a previously unknown conflict becomes apparent, pause affected work and flag the need for venue clearance or reassignment. Disclosing it is not the same as being cleared. Do not deanonymize participants or contact them to resolve uncertainty; preserve the review model and use the authorized editorial process.
+
 ## Revision transitions
 
 - **Open → resolved:** the revised material or justified response addresses the scientific consequence; cite where.

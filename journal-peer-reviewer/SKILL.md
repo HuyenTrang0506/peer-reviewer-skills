@@ -11,6 +11,8 @@ Support the accountable human reviewer. Produce a working draft, never an editor
 
 Read [references/journal-workflow.md](references/journal-workflow.md). Establish the journal, article type, review round, decision criteria, form, deadline, and policy source/date. Do not infer that every journal requires high novelty or offers unlimited revision. For an unspecified venue, give a provisional journal-oriented assessment and withhold venue-specific claims/categories. If journal versus conference is unknown and changes the task, clarify the destination before choosing the review form.
 
+Keep editorial screening distinct from external scientific review: scope mismatch does not establish invalid science, and passing triage does not validate the paper. Treat similarity results as contextual evidence requiring editor judgment, never an automatic plagiarism verdict or rejection threshold. If a conflict emerges later, pause the affected assessment pending appropriate editor clearance without trying to identify anonymized authors.
+
 Read [references/peer-review-standards.md](references/peer-review-standards.md) and record the four transparency dimensions in the workbook. ANSI/NISO Z39.106-2023 concerns terminology for external review of journal articles; it is not a scientific scoring rubric. Keep identity, communication, publication of review information, and post-publication commenting distinct. Do not treat an open-access article as permission to disclose its unpublished reviews.
 
 ## Establish the assignment

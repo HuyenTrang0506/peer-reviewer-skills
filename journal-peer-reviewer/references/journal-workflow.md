@@ -6,6 +6,22 @@ Record the journal and article type (original study, review, protocol, case repo
 
 Separate invitation readiness from manuscript merit: competence, conflicts, availability, confidentiality, and permitted assistance must be resolved. If the human cannot meet the assignment, flag the need to decline, request an extension, or seek an editor-approved specialist. Do not contact anyone automatically. Statistical uncertainty can justify specialist input; do not assume every journal provides a statistics editor.
 
+## Editorial screening and reviewer selection
+
+Before external review, editors may screen alignment with the journal's aims/scope, article type, contribution threshold, depth, intelligibility, and submission requirements. An out-of-scope manuscript can be scientifically sound; a scope objection is not proof of invalid methods. Passing this screen is not evidence that the science, ethics, or references were independently verified. The editor may decline, return, transfer, or send the paper for review under journal policy; the assistant must not announce a desk rejection on the editor's behalf.
+
+If an external reviewer notices a genuine scope mismatch, explain the relevant journal criterion and ask for editorial handling instead of distorting the scientific assessment. Assess language through its effect on understanding, not presumed nationality, institutional prestige, or stylistic preference. Reviewers do not inherit authority to conduct editorial screening simply because a training slide describes it.
+
+Reviewer selection should cover subject-matter and/or methodological expertise, with conflicts assessed under the venue's actual definitions. Known shared affiliation, recent collaboration, supervision, personal relationships, direct competition, or financial interests may require disclosure or recusal. Do not invent universal lookback periods or assume disclosure alone clears a conflict. If a potential conflict becomes apparent during review, pause the affected assessment, flag it for editor clearance, and preserve anonymity; do not investigate identities to complete the check. Any editor contact remains a human-authorized action.
+
+The supplied slides describe many journals aiming for two reviewers and roughly two to four weeks. These are contextual examples, not requirements or current verified averages. Use the actual invitation's deadlines, number of assigned roles, and specialist process. A simulated AI persona does not count as an invited independent reviewer.
+
+## Similarity screening is not a plagiarism verdict
+
+Editors may use similarity tools before external review. A similarity percentage alone cannot establish plagiarism, fabrication, or originality, and there is no universal rejection threshold here. Consider the actual matched passage/source, attribution, quotation, conventional methods language, preprints, and legitimate reuse within the applicable policy. A low score also does not prove originality.
+
+For an observable overlap concern, record the inspected locations, corresponding public source, attribution context, and uncertainty. Route a concise factual concern privately to the editor for investigation; do not accuse authors or demand automatic rejection. Do not upload the manuscript or distinctive unpublished passages to a plagiarism checker, search service, or AI detector without specific authorization and venue permission. If a similarity report was not supplied or run, state that no such check was performed. Tool results cannot replace scientific appraisal.
+
 ## Read, appraise, and report
 
 Wong, Soni, and Glass (2025) recommend a complete broad reading followed by a detailed reading, then a summary, prioritized major concerns, minor concerns, and a reasoned editor recommendation. Our orientation/appraisal/reconciliation passes implement this flexibly; they do not replace reading the full assigned material with a skim.

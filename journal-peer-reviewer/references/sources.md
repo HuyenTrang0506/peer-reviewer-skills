@@ -2,6 +2,8 @@
 
 Source access checked on 2026-10-22. This is a source note for an initial methodology, not a systematic literature review or validation study.
 
+Additional user-supplied screening/selection slides were reviewed on 2026-10-23; earlier source-access dates below are unchanged.
+
 ## Sources inspected
 
 1. **User-supplied course screenshots**, Sections 1 and 3. Used for topic coverage and report audiences. The course author, publication date, institutional attribution, and Section 2 are not supplied. Do not infer them from branding or references to a vendor.
@@ -12,6 +14,7 @@ Source access checked on 2026-10-22. This is a source note for an initial method
 6. **NeurIPS 2025 reviewer guidelines.** [Official page](https://neurips.cc/Conferences/2025/ReviewerGuidelines), inspected 2026-10-22. Inspected the review rubric, overall/confidence scales, author-response/discussion process, and publication/readership instructions. Edition-specific example, not a universal conference policy or verified current AI-use authorization for another assignment.
 7. **ICLR 2026 reviewer guide.** [Official page](https://iclr.cc/Conferences/2026/ReviewerGuide), inspected 2026-10-22. Inspected the staged review/discussion/update process and policies on bounded additional experiments, SOTA, contemporaneous work, and AI disclosures. These policies belong to that edition; recheck the actual assignment's rules.
 8. **Additional supplied Elsevier Researcher Academy screenshots.** They explicitly identify the provider and present scholarly-publishing functions, a journal editorial workflow, reviewer qualities, and NISO/STM terminology dimensions. This identifies the newly supplied slides; it does not establish a date or missing sections of the original screenshots. The slide on journal process credits *Peer review: the nuts and bolts*, Sense About Science (2012); the original publication was not retrieved. General statements about “ensuring” validity are interpreted as quality-assurance aims, not guarantees of truth or complete misconduct detection.
+9. **User-supplied editorial-screening and reviewer-selection slides, received 2026-10-23.** Cover journal fit, further editorial assessment, similarity screening, selection by topic/method expertise, conflicts, invitation response, and illustrative reviewer counts/timelines. Used to clarify process boundaries, not to establish a universal two-reviewer rule, two-to-four-week deadline, or similarity rejection threshold. Repeated copies of the selection slide are the same input, not independent corroboration. Original slide publication date and full underlying course were not verified.
 
 ## Additional guidance not verified live
 

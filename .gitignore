@@ -1,0 +1,5 @@
+# Task-local reference downloads and confidential review derivatives are not sources.
+.review-resources/
+.private-reviews/
+__pycache__/
+*.pyc

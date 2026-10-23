@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conference Peer Reviewer"
+  short_description: "Review conference papers, rebuttals, and review discussions"
+  default_prompt: "Use $conference-peer-reviewer to assess the authorized submission against its conference, year, and track policies."
