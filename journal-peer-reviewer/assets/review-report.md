@@ -2,6 +2,13 @@
 
 Adapt to the venue. Replace field instructions and remove unused sections before handoff. Keep audiences in separate outputs when required. Do not copy the private workbook into the report.
 
+For drafting decisions, use [Chapter 9: report writing](../references/03-reporting/report-writing.md).
+Order concerns by consequence or by manuscript section as useful. Priority follows
+the scientific effect; uncertainty omissions and figure discrepancies are not
+automatically minor. Distinguish required from optional actions regardless of
+major/minor priority; number comments and use truthful page/line/panel locators. Evaluate contribution against the actual article type and
+venue criteria, without a universal novelty threshold.
+
 ## Comments to authors
 
 ### Summary and contribution

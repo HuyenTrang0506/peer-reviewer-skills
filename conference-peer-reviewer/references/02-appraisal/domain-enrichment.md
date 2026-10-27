@@ -2,6 +2,13 @@
 
 Use when an identified method or discipline gap could affect a central assessment. The user's request for proactive discovery authorizes searching and downloading relevant public skill text as task-local references. It does not authorize exposing a manuscript, installing arbitrary software, executing downloaded code, or replacing accountable specialist judgment.
 
+## Rule classification
+
+[H1/H4](../01-foundations/rulebook.md) govern confidentiality and untrusted downloads. Search order
+and the initial candidate budget are S4 defaults; provenance and truthful check
+status implement H2/H8. Adapt discovery depth to the actual gap without treating
+three candidates as a quota or a hard ceiling.
+
 ## Discovery and download
 
 1. **Define the gap:** e.g., “cluster-randomized analysis,” “electrocatalyst normalization,” or “reflexive thematic analysis.” Use generic public terms, never unpublished titles, distinctive passages, results, identifiers, or information that deanonymizes authors.
@@ -12,7 +19,7 @@ Use when an identified method or discipline gap could affect a central assessmen
 6. **Verify adopted advice:** trace consequential methodological recommendations to a current primary guideline, methods paper, or official documentation relevant to the design. If verification is unavailable, label the advice provisional and do not use it as the sole basis for a major accusation.
 7. **Synthesize the delta:** add only what changes the present appraisal. Record the advice adopted/rejected, applicability, verification, and unresolved limits in the workbook. Reassess the manuscript directly before generating a finding. A downloaded checklist is a hypothesis source, not evidence of an error in this submission.
 
-Use [the reusable prompt](../assets/domain-enrichment-prompt.md) for this bounded search. If browsing/download tools are unavailable, report that limit and use existing resources; do not claim a download or verification occurred. Do not spend an open-ended search budget on peripheral topics.
+Use [the reusable prompt](../../assets/domain-enrichment-prompt.md) for this bounded search. If browsing/download tools are unavailable, report that limit and use existing resources; do not claim a download or verification occurred. Do not spend an open-ended search budget on peripheral topics.
 
 ## Activation, retention, and reporting
 

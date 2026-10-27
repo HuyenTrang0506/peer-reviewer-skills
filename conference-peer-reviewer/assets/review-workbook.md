@@ -9,8 +9,21 @@ Complete relevant fields within the authorized handling policy. This is not the 
 - Stage and materials permitted for this stage; whether revised submissions/new experiments are allowed:
 - Authorization and venue confidentiality/AI/co-review policy:
 - Conflicts, expertise, specialist needs:
+- Deadline feasibility, known delays, and human availability for a later re-review:
+- Co-reviewer role/permission/registration and disclosure, if applicable:
 - Materials, versions, missing items:
 - Permitted tools/services and retention/deletion requirements:
+
+## Applicable rules and limits
+
+Use [the rulebook](../references/01-foundations/rulebook.md). Complete only relevant entries;
+equivalent notes are acceptable (S2).
+
+| Rule ID | Applicable trigger or venue requirement | Policy source/version/date, if relevant | Status and effect on this review |
+| --- | --- | --- | --- |
+
+- Unresolved conditions and affected actions withheld/narrowed:
+- Material adaptation of soft defaults and effect on coverage/interpretation, if any:
 
 ## Review-process transparency
 
@@ -29,6 +42,7 @@ Record the actual policy and source for each dimension; unknown is not none. The
 - Intervention/exposure/model, comparator, outcomes, timing:
 - Main findings, uncertainty, supported strengths:
 - Reporting guidance and version checked:
+- For synthesis articles: subtype, intended audience, declared literature cutoff/coverage, editorial stance, and applicable word/reference/figure limits:
 
 ## Domain enrichment, if needed
 
@@ -47,10 +61,15 @@ Status: inspected, not checked, unavailable, or outside competence. Inspected do
 
 ## Issue ledger
 
-| Issue ID | Location | Observation/evidence/criterion | Type | Consequence | Priority | Smallest adequate action/alternative | Confidence/check needed |
+| Issue ID | Location | Observation/evidence/criterion; rule ID if useful | Type | Consequence | Priority | Smallest adequate action/alternative | Confidence/check needed |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Type: observed problem, reporting gap, unresolved question, optional improvement. Priority: major, minor, optional.
+Explicitly mark required versus optional requests in the action field; required
+minor corrections are possible. FIG/READ/LANG/INT/REV IDs are optional traceability,
+not substitutes for evidence. For display findings, include panel/version and
+rendering limits. For language findings, identify the scientific ambiguity.
+
 
 ## Challenge and provenance of major concerns
 
@@ -65,6 +84,7 @@ Use source IDs for the actual report/check supplying a concern, not invented exp
 - Remediability within current study and relevant venue criteria:
 - Recommendation, if requested, and confidence limits:
 - Confidential editor matters:
+- Scientific rechecking needed versus the human's availability to undertake it:
 
 ## Revision tracking
 

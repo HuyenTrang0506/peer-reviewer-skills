@@ -1,12 +1,35 @@
 # Reviewer methodology
 
+Apply [the rulebook](../01-foundations/rulebook.md): H rules are required when triggered; V rules
+require applicable venue policy; the passes, table layout, and ordering below are
+S defaults. Adapt the procedure without weakening evidence or coverage honesty.
+
 ## 1. Establish scope
 
 Record venue, article type, review round/model, requested questions, deadline where relevant, conflicts, expertise, authorization, AI/tool permission, confidentiality, and retention rules. Single, double, and triple anonymized review and open practices vary between venues: record who sees identities and whether reports are published rather than assume a universal implementation.
 
-Use [the standards reference](peer-review-standards.md) for precise terminology and [domain enrichment](domain-enrichment.md) for an identified expertise gap. A reference search can support a review but cannot confer professional expertise or resolve a conflict of interest. Decline or request specialist review if the central assignment cannot be completed competently and on time; the assistant does not send that message without authorization.
+Use [the standards reference](../01-foundations/peer-review-standards.md) for precise terminology and [domain enrichment](domain-enrichment.md) for an identified expertise gap. A reference search can support a review but cannot confer professional expertise or resolve a conflict of interest. Decline or request specialist review if the central assignment cannot be completed competently and on time; the assistant does not send that message without authorization.
 
 Submission commonly passes administrative checks and editorial triage before external review. Do not assume these verified the science, ethics, references, or data. Inventory manuscript/supplement versions, protocols/registrations, availability statements, instructions, and prior reports/response letters. Record missing materials and limits of a focused review.
+
+### Co-review, timing and follow-up commitments
+
+Under H1/H4 and applicable V4, a trainee or other co-reviewer can participate only
+within actual venue permission, confidentiality, conflict and disclosure rules.
+Informing the editor alone does not establish permission if prior approval or
+registration is required. The training slide's teaching suggestion does not
+authorize sharing manuscript files, recruiting anyone, or creating an AI panel.
+If permitted, record the person's role and assistance disclosure without inventing
+independent expertise. The accountable human remains responsible for the report.
+
+At invitation or when circumstances change, distinguish competence, conflicts,
+initial deadline and ability to take a later re-review. Do not promise a deadline
+or future participation on the human's behalf. If a known deadline cannot be met,
+flag the need to decline or agree an extension; unexpected delays and new
+conflicts need prompt human handling through the actual venue route. Draft a
+message when requested; do not send one without authorization. If instructions
+are unclear, identify the specific question for the editor/committee rather than
+invent a policy. Scientific need for re-review remains independent of availability.
 
 ## 2. First pass: understand before judging
 
@@ -46,6 +69,10 @@ Assess sample-size rationale and achieved precision; do not demand retrospective
 | Theory/mathematics | Assumptions, proof/argument, boundary cases, prior results | Discipline and venue conventions |
 
 This is a routing aid, not an exhaustive checklist or assurance that any edition is current. Verify the current base guideline, extensions, and venue requirements. Do not impose health-specific standards on unrelated fields. Reporting coverage does not establish validity or replace risk-of-bias appraisal.
+
+For narrative, systematic, scoping or meta-analytic review manuscripts, apply
+[the review-article module](review-articles.md). Appraise the actual synthesis
+method and claims rather than assume that all reviews lack methods or data.
 
 ## 4. Third pass: reconcile the paper
 

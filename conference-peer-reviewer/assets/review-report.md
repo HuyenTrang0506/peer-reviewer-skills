@@ -2,6 +2,13 @@
 
 Replace instructions and adapt to the actual conference edition/track form. Do not invent scores or required fields. Record the submission version, review stage, policy sources, and assessment limits. Remove private handoff instructions before submission.
 
+For drafting decisions, use [Chapter 9: report writing](../references/03-reporting/report-writing.md).
+Order concerns by consequence or by manuscript section as useful. Priority follows
+the scientific effect; uncertainty omissions and figure discrepancies are not
+automatically minor. Distinguish required from optional actions regardless of
+major/minor priority; number comments and use truthful page/line/panel locators. Evaluate contribution against the actual article type and
+venue criteria, without a universal novelty threshold.
+
 ## Author-facing review — readership as specified by venue
 
 ### Contribution summary

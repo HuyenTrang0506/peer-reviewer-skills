@@ -26,9 +26,9 @@ For an observable overlap concern, record the inspected locations, corresponding
 
 Wong, Soni, and Glass (2025) recommend a complete broad reading followed by a detailed reading, then a summary, prioritized major concerns, minor concerns, and a reasoned editor recommendation. Our orientation/appraisal/reconciliation passes implement this flexibly; they do not replace reading the full assigned material with a skim.
 
-Read [reviewer-methodology.md](reviewer-methodology.md). For a full assignment, the human reviewer should read the complete submission within the agreed materials policy. Check the title/abstract for accurate scope, introduction for question/context, methods for validity/ethics, results for support, discussion/conclusion for justified interpretation, and references for accurate attribution. A literature check must use public generic terms and respect anonymity/confidentiality. Avoid extensive copyediting; comment on language when it obscures a scientific point.
+Read [reviewer-methodology.md](../02-appraisal/reviewer-methodology.md). For a full assignment, the human reviewer should read the complete submission within the agreed materials policy. Check the title/abstract for accurate scope, introduction for question/context, methods for validity/ethics, results for support, discussion/conclusion for justified interpretation, and references for accurate attribution. A literature check must use public generic terms and respect anonymity/confidentiality. Avoid extensive copyediting; comment on language when it obscures a scientific point.
 
-Use [the report template](../assets/review-report.md). Normally place scientific reasons where authors can respond and acceptance/rejection advice in the editor channel. The actual journal's form controls routing and disclosure. A confidential note may still be disclosed later under policy; do not promise secrecy beyond that policy.
+Use [the report template](../../assets/review-report.md). Normally place scientific reasons where authors can respond and acceptance/rejection advice in the editor channel. The actual journal's form controls routing and disclosure. A confidential note may still be disclosed later under policy; do not promise secrecy beyond that policy.
 
 ## Recommend and re-review
 
@@ -36,10 +36,28 @@ Use only categories offered by the journal. Explain whether remaining problems a
 
 At re-review, inspect the response and actual changed manuscript, check each stable issue ID, and reconcile the whole paper where revisions affect interpretation. Accept reasoned alternative remedies. If reviews are transferred/cascaded, identify what was inherited, which version was assessed, and what this review checked independently; transferred review is not automatic validation.
 
+## Minor versus major revision
+
+Use the journal's definitions and explain the effect of outstanding issues on the
+central claims. A practical prompt from the supplied slide is whether another
+scientific assessment of the revision would be necessary. This is a soft heuristic:
+“minor” does not universally mean no re-review, and “major” does not imply a new
+experiment or guaranteed acceptance. The editor controls routing of revisions.
+State the verification needed and keep numbered required corrections separate
+from optional suggestions, regardless of their major/minor priority.
+
+Ordinary scientific reasons and remedies must be available to authors. The
+confidential editor field is not a substitute for actionable author comments;
+actual policy governs its readership and possible later release.
+
+For observed overlap or integrity concerns, follow
+[integrity and overlap](integrity-and-overlap.md), rather than the training slide's
+automatic-reject shortcut. Similarity, novelty and misconduct are separate issues.
+
 ## Publishing context and limits
 
 The supplied Elsevier Researcher Academy slides describe registration, certification, dissemination, and preservation. They help explain why review serves the scholarly record. A timestamp records a submission event, not definitive proof of scientific priority; peer review contributes quality assurance but cannot guarantee truth, detect all misconduct, or validate every result. Discovery and preservation are publishing functions, not extra experiments the reviewer should demand.
 
 Novelty, attribution, validity, integrity, and importance are separate judgments. Preserve constructive, fair, objective, timely feedback. Reward a candid discussion of limitations rather than treat every admitted limitation as a rejection reason.
 
-Sources and limits: [sources.md](sources.md), [peer-review-standards.md](peer-review-standards.md).
+Sources and limits: [sources.md](../appendices/sources.md), [peer-review-standards.md](peer-review-standards.md).

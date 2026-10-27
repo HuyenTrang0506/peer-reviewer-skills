@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Maintain standalone skill packages; journal files are canonical for this list."""
+"""Export canonical common resources into self-contained skill packages."""
 
 import argparse
 from pathlib import Path
@@ -7,38 +7,56 @@ import sys
 
 
 SHARED_FILES = (
-    "references/adjudication.md",
-    "references/computational-ml.md",
-    "references/domain-enrichment.md",
-    "references/evaluation.md",
-    "references/evaluation-key.md",
-    "references/experimental-clinical.md",
-    "references/peer-review-standards.md",
-    "references/qualitative.md",
-    "references/reviewer-methodology.md",
-    "references/sources.md",
+    "references/03-reporting/adjudication.md",
+    "references/02-appraisal/computational-ml.md",
+    "references/02-appraisal/domain-enrichment.md",
+    "references/appendices/evaluation.md",
+    "references/appendices/evaluation-key.md",
+    "references/02-appraisal/experimental-clinical.md",
+    "references/01-foundations/peer-review-standards.md",
+    "references/02-appraisal/qualitative.md",
+    "references/02-appraisal/reviewer-methodology.md",
+    "references/01-foundations/rulebook.md",
+    "references/appendices/sources.md",
+    "references/02-appraisal/section-by-section.md",
+    "references/02-appraisal/review-articles.md",
+    "references/03-reporting/report-writing.md",
+    "references/02-appraisal/figures-and-tables.md",
+    "references/02-appraisal/language-and-readability.md",
+    "references/03-reporting/professional-language.md",
+    "references/01-foundations/integrity-and-overlap.md",
     "assets/domain-enrichment-prompt.md",
     "assets/evaluation-cases.jsonl",
     "assets/review-workbook.md",
     "assets/venue-scenarios.jsonl",
 )
 
+REVIEW_PACKAGES = ("journal-peer-reviewer", "conference-peer-reviewer")
+LANGUAGE_SOURCE = "references/03-reporting/professional-language.md"
+
 
 def synchronize(root: Path, write: bool = False) -> list[str]:
-    source = root / "journal-peer-reviewer"
-    target = root / "conference-peer-reviewer"
+    source = root / "common"
     # Read all sources first; a missing source must not cause a partial update.
     contents = {relative: (source / relative).read_bytes() for relative in SHARED_FILES}
+    exports = {
+        f"{package}/{relative}": data
+        for package in REVIEW_PACKAGES
+        for relative, data in contents.items()
+    }
+    exports["professional-office-language/references/professional-language.md"] = contents[
+        LANGUAGE_SOURCE
+    ]
     differences = []
-    for relative, data in contents.items():
-        destination = target / relative
+    for relative, data in exports.items():
+        destination = root / relative
         if not destination.is_file() or destination.read_bytes() != data:
             differences.append(relative)
     if write:
         for relative in differences:
-            destination = target / relative
+            destination = root / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
-            destination.write_bytes(contents[relative])
+            destination.write_bytes(exports[relative])
     return differences
 
 

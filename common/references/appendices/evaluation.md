@@ -2,13 +2,13 @@
 
 ## What this package supplies
 
-[Development cases](../assets/evaluation-cases.jsonl) contain twelve fictional, bounded excerpts in six matched pairs. [The answer key](evaluation-key.md) identifies intended concerns and repaired controls. These are developer-authored diagnostics, not independent expert labels. No performance run or expert-equivalence claim is supplied.
+[Development cases](../../assets/evaluation-cases.jsonl) contain twelve fictional, bounded excerpts in six matched pairs. [The answer key](evaluation-key.md) identifies intended concerns and repaired controls. These are developer-authored diagnostics, not independent expert labels. No performance run or expert-equivalence claim is supplied.
 
 Cases cover a demonstrated unit-of-analysis error, a reporting gap, patient leakage, a null/equivalence overclaim, observational causality, and a qualitative study's contradictory reliability claim against its own criterion. A correct review may have no required criticism of the supplied excerpt. The reliability pair tests that specific codebook-based design, not a universal requirement for kappa in qualitative work.
 
 ## Venue and tool-boundary scenarios
 
-[Four additional scenarios](../assets/venue-scenarios.jsonl) exercise journal/conference routing, transparency, and domain enrichment. Expected behavior is in [the separate key](evaluation-key.md). They are not matched scientific-detection pairs and must not enter the six-pair recall/specificity denominators below. Run them in fresh contexts with only the scenario text and selected skill; hide the key and other scenarios.
+[Four additional scenarios](../../assets/venue-scenarios.jsonl) exercise journal/conference routing, transparency, and domain enrichment. Expected behavior is in [the separate key](evaluation-key.md). They are not matched scientific-detection pairs and must not enter the six-pair recall/specificity denominators below. Run them in fresh contexts with only the scenario text and selected skill; hide the key and other scenarios.
 
 Code each requirement separately as satisfied, violated, or unverifiable, with an output anchor. For routing, check the actual categories, channels, and stage rules, not whether a heading matches a template. For enrichment, browsing/download tools are deliberately unavailable in the scenario; a truthful limitation and useful search plan pass, a fabricated download fails. Record raw outputs and annotate blind as for the core cases. Status remains NOT RUN until outputs and annotations exist.
 

@@ -1,6 +1,6 @@
 # From course outline to reviewer methodology
 
-This repository translates the supplied reviewer-training screenshots and inspected public guidance into two standalone skills: journal reviewing and conference reviewing. The screenshots establish training topics; they do not document how an individual reviewer actually performed a review. The method below is a proposed synthesis of guidance and methodological reasoning, not an observational study of reviewers.
+This repository translates the supplied reviewer-training screenshots and inspected public guidance into two standalone reviewer skills: journal reviewing and conference reviewing. A small companion skill handles professional language for review comments and office documents. The screenshots establish training topics; they do not document how an individual reviewer actually performed a review. The method below is a proposed synthesis of guidance and methodological reasoning, not an observational study of reviewers.
 
 ## Analysis of the supplied material
 
@@ -15,7 +15,7 @@ This repository translates the supplied reviewer-training screenshots and inspec
 | Confidential editor comments | Separate recommendation and genuinely confidential matters from author feedback. |
 | Accept, reject, minor revision, major revision | Justify advice through consequences and remediability of findings. |
 
-The initial screenshots supplied Sections 1 and 3. Additional slides now explicitly identify Elsevier Researcher Academy and cover publishing functions, journal process, reviewer qualities, and NISO/STM terminology. The course date, author, full content, and missing Section 2 remain unverified. No missing section is reconstructed as fact. Publishing history and recruitment are useful context but need not dominate operational instructions.
+The initial screenshots supplied Sections 1 and 3. Additional slides now explicitly identify Elsevier Researcher Academy and cover publishing functions, journal process, reviewer qualities, and NISO/STM terminology. The course date, author, full content, and complete Section 2 remain unverified. No missing section is reconstructed as fact. Publishing history and recruitment are useful context but need not dominate operational instructions.
 
 The slide's placement of language/grammar and general impressions under editor comments should not become a blanket rule: ordinary scientific and clarity criticisms belong where authors can respond. Its mention of a commercial language service is not a reason to require that service.
 
@@ -25,7 +25,7 @@ A report outline says where comments go. A reviewing method explains how to deci
 
 **Assignment → manuscript map → claim/evidence appraisal → issue triage → constructive report → human verification.**
 
-Reading need not follow the printed section order. A useful first pass establishes the question and claims; another examines methods and results together; a final pass tests consistency and interpretation. Reviewers may loop back as their understanding changes. The PLOS guidance recognizes different reviewing methods; Wong et al. (2025) recommend a complete broad reading followed by a detailed reading. Our passes implement that flexibly, not as a shortcut to reviewing excerpts while claiming full coverage; see [source notes](journal-peer-reviewer/references/sources.md).
+Reading need not follow the printed section order. A useful first pass establishes the question and claims; another examines methods and results together; a final pass tests consistency and interpretation. Reviewers may loop back as their understanding changes. The PLOS guidance recognizes different reviewing methods; Wong et al. (2025) recommend a complete broad reading followed by a detailed reading. Our passes implement that flexibly, not as a shortcut to reviewing excerpts while claiming full coverage; see [source notes](journal-peer-reviewer/references/appendices/sources.md).
 
 For each potential concern, answer:
 
@@ -63,27 +63,104 @@ These are working aids, not a numerical quality score. A complete checklist does
 
 ## Skill architecture
 
+### Rule architecture
+
+Both entry points separate rule classes before presenting the staged workflow.
+The shared [rulebook](journal-peer-reviewer/references/01-foundations/rulebook.md) gives stable
+IDs, applicability triggers, obligations, and recovery actions:
+
+- **H1–H8: hard rules.** Authorization, evidence integrity, coverage honesty,
+  role boundaries, fair critique, proportionate requirements, reasoned assessment,
+  and honest human handoff are required when their triggers apply.
+- **V1–V4: venue-conditional requirements.** Criteria/form, materials, audiences
+  and interaction, assistance and retention become binding through actual
+  applicable policy. Unknown policy limits the dependent action rather than
+  producing an invented rubric or stopping unrelated public guidance.
+- **S1–S5: soft defaults.** Reading passes, working-note layout, report structure,
+  search budget, and limited copyediting can adapt to the assignment. Only
+  changes materially affecting coverage or interpretation need explanation.
+
+This is a local operational classification, not terminology prescribed by NISO
+or STM. For example, whole-paper coverage is required before claiming a full
+review (H3), supplement obligations depend on the assignment (V2), and reading
+order remains flexible (S1). Constructive critique does not prohibit a negative
+recommendation; it requires evidence and professional, answerable reasons (H5/H7).
+Necessary references can include a reviewer's work; coercive or irrelevant
+self-citation is prohibited (H5). Additional experiments require a reason tied to
+retained claims or applicable criteria, with bounded alternatives considered
+(H6); future-research suggestions remain optional (S5).
+
+Procedural references supply implementation guidance rather than extra absolute
+requirements. The workbook records applicable rules, policy provenance, affected
+actions, and material adaptations without requiring a style-deviation audit.
+
 ```text
-journal-peer-reviewer/
-├── SKILL.md                         Journal entry point
-├── agents/openai.yaml               Discovery metadata
-├── references/journal-workflow.md   Journal procedure and decision channels
-├── references/worked-example.md     Journal review and re-review example
-├── assets/review-report.md          Author/editor report
-└── references/ and assets/          Shared appraisal, standards, enrichment, diagnostics
-conference-peer-reviewer/
-├── SKILL.md                         Conference/year/track entry point
-├── agents/openai.yaml               Discovery metadata
-├── references/conference-workflow.md
-├── references/worked-example.md     Conference review and rebuttal example
-├── assets/review-report.md          Rubric, confidence, response/discussion update
-└── references/ and assets/          Local copies of shared resources
-scripts/sync_shared_resources.py     Maintain identical shared resources
-tests/test_shared_resources.py       Sync invariants
-COMMIT_PLAN.md                      User-run incremental commit commands
+common/                                Canonical reusable chapters, rules, forms and cases
+journal-peer-reviewer/                  Standalone journal handbook
+conference-peer-reviewer/               Standalone conference handbook
+  SKILL.md                             Entry point, rule classes, essential gates
+  agents/openai.yaml                   Discovery metadata
+  references/
+    CONTENTS.md                        Venue-specific contents and reading routes
+    01-foundations/                    Chapters 1–3: rules, standards, assignment
+    02-appraisal/                      Chapters 4–7: method, sections, domains, enrichment
+    03-reporting/                      Chapters 8–9: adjudication and report writing
+    04-review-rounds/                   Chapter 10: venue-specific worked follow-up
+    appendices/                        Sources, evaluation protocol and answer key
+  assets/                              Forms and development datasets
+professional-office-language/          Small standalone wording skill (LANG rules)
+scripts/sync_shared_resources.py        Export common resources into skill packages
+tests/test_shared_resources.py          Sync invariants
+COMMIT_PLAN.md                          Suggested message and user-run commit steps
 ```
 
-Each skill is self-contained and can be installed alone; there are no sibling-file dependencies. Shared references are authored in `journal-peer-reviewer/` and copied into the conference package by the explicit allowlist in `scripts/sync_shared_resources.py`. Edit common resources there, then run `python3 scripts/sync_shared_resources.py --write`; `--check` detects drift without writing. Venue-specific entry points, workflows, report templates, metadata, and examples are never synchronized. The script supports packaging consistency, not scientific judgment.
+Each skill is self-contained and can be installed alone; there are no sibling-file dependencies. Shared references are authored in `common/` and exported into both reviewer packages by the explicit allowlist in `scripts/sync_shared_resources.py`. The same LANG reference is also exported into the office-language skill. Edit common resources there, then run `python3 scripts/sync_shared_resources.py --write`; `--check` detects drift without writing. Venue-specific entry points, contents pages, workflows, report templates, metadata, and examples are never synchronized. These exported copies are packaging artifacts: maintain one source in `common/`,
+while each installed skill remains self-contained without sibling dependencies.
+The script reads all canonical inputs before writing, detects drift in either
+reviewer package or the language export, and leaves venue-specific files alone.
+It supports packaging consistency, not scientific judgment.
+
+The book organization is functional: Chapter 5 adds article-type and
+section-by-section appraisal; Chapter 9 turns adjudicated findings into a report.
+The new supplied checklist/structure slides support these topics, with caveats:
+novelty depends on article type and venue, checklist coverage is not validity,
+and major/minor priority depends on scientific consequence rather than a slide's
+example label. Overview, strengths, and comment ordering are presentation defaults;
+venue-specific forms still govern outputs. See the local contents pages for all
+chapter links. Evaluation appendices remain separate from ordinary review.
+
+### Small reusable rule modules
+
+FIG, READ, LANG, INT and REV modules provide granular IDs, explicit rule classes,
+applicability, and recovery. Display rules cover actual visual inspection,
+quantities/units, legends/colorbars, uncertainty and independent units,
+text/display correspondence, readability, overplotting and bounded integrity
+concerns. READ separates scientific ambiguity from imperfect but understandable
+language; LANG preserves facts and intent while improving professional wording.
+INT separates observed overlap from allegations and automatic-rejection shortcuts.
+REV distinguishes narrative, systematic, scoping and meta-analytic synthesis,
+checks faithful source representation and consensus versus author interpretation,
+and assesses contribution against audience and venue. It does not transfer a
+primary-research experiment checklist to every review or waive assessment of
+methods/statistics for a literature synthesis. The review format also governs the expected referencing rigor and editorial
+stance: a perspective, focused trends update and systematic synthesis have
+different evidence/coverage obligations. Actual format limits guide proportionate
+remedies without excusing inaccurate claims. An opening summary is optional unless
+the form requires one. Co-review permission and availability for re-review are
+recorded separately from scientific judgment; inability to return does not change
+the need for another check. These modules do not impose every domain-specific
+check on every paper.
+
+The office-language skill uses LANG without requiring either reviewer package.
+It drafts and edits wording; it does not verify scientific findings, modify a
+submission by default, contact recipients or prescribe paid language services.
+The same language reference is generated into all three packages from one source.
+
+The added training material also motivates checking methods/results in both
+directions, abstract/main-text consistency and discussion/claim alignment.
+Minor versus major revision remains venue-specific: not needing re-review is
+only a heuristic, not a universal definition. Required versus optional action is
+separate from issue priority, and confidentiality/readership follows real policy.
 
 ## Journal and conference are separate contracts
 
@@ -99,13 +176,13 @@ These are routing distinctions, not rigid claims that all journals or conference
 
 ## Terminology and domain knowledge
 
-[ANSI/NISO Z39.106-2023](journal-peer-reviewer/references/peer-review-standards.md) defines identity transparency, reviewer interaction, published review information, and post-publication commenting. Its 2023 scope is external journal-article review; scientific criteria and acceptance governance are excluded. The conference skill uses those dimensions descriptively, without claiming NISO prescribes conference procedure. The standard's STM origins are verified through NISO; the STM web endpoint itself was inaccessible.
+[ANSI/NISO Z39.106-2023](journal-peer-reviewer/references/01-foundations/peer-review-standards.md) defines identity transparency, reviewer interaction, published review information, and post-publication commenting. Its 2023 scope is external journal-article review; scientific criteria and acceptance governance are excluded. The conference skill uses those dimensions descriptively, without claiming NISO prescribes conference procedure. The standard's STM origins are verified through NISO; the STM web endpoint itself was inaccessible.
 
-The skills proactively [enrich domain knowledge](journal-peer-reviewer/references/domain-enrichment.md) when a specific gap matters. They inspect relevant local resources, search generic public terms, download suitable public skill text as task-local references, preserve provenance/license, and verify consequential advice against primary methodological sources. Downloading reference material does not authorize executing it or exporting confidential content. This adds knowledge without claiming professional competence or silently imposing another skill's tools and behavior.
+The skills proactively [enrich domain knowledge](journal-peer-reviewer/references/02-appraisal/domain-enrichment.md) when a specific gap matters. They inspect relevant local resources, search generic public terms, download suitable public skill text as task-local references, preserve provenance/license, and verify consequential advice against primary methodological sources. Downloading reference material does not authorize executing it or exporting confidential content. This adds knowledge without claiming professional competence or silently imposing another skill's tools and behavior.
 
 ## Readiness and limits
 
-The repository contains two standalone skills, common claim-specific appraisal guides, separate complete fictional workflows, and twelve diagnostic excerpts in six matched pairs with a separate key and evaluation protocol. Venue-routing scenarios supplement the core diagnostics. Public implementations, the PMC article, standards, conference-policy examples, and their access limitations are recorded in source notes.
+The repository contains two standalone reviewer skills, a small professional-language skill, common claim-specific appraisal guides, separate complete fictional workflows, and twelve diagnostic excerpts in six matched pairs with a separate key and evaluation protocol. Venue-routing scenarios supplement the core diagnostics. Public implementations, the PMC article, standards, conference-policy examples, and their access limitations are recorded in source notes.
 
 It has not reviewed an actual manuscript, been validated against editor ratings, or demonstrated improvement in reviewer performance. The diagnostic evaluation is prepared but not run; author-written cases are not independent expert gold. Future evaluation must examine both detection and restraint using unseen authorized material, not just count how many criticisms a model emits.
 
